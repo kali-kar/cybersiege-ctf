@@ -1630,3 +1630,10 @@
   }
 
 }
+
+/* ===== Make CYBERSIEGE slightly smaller on mobile ===== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: clamp(36px, 10vw, 64px);
+  }
+}

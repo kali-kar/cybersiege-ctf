@@ -1637,3 +1637,23 @@
     font-size: clamp(36px, 10vw, 64px);
   }
 }
+
+/* Prevent horizontal scroll globally */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure sections don't overflow */
+section {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix orbit mobile overflow */
+@media (max-width: 768px) {
+  .orbit-wrap {
+    width: 85vw;
+    height: 85vw;
+  }
+}
